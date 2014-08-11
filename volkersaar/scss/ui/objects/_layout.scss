@@ -1,0 +1,53 @@
+@if $use-layout == true{
+
+/* ==========================================================================
+    LAYOUT
+   ========================================================================== */
+.wrapper {
+	overflow: hidden;
+    @include media-query-max(lap) {
+    	width: 45em;
+    	//min-width: 45em;
+    }
+    @include media-query-max(desk) {
+    	width: 75em;
+    }
+    @include media-query(deskwide) {
+    	width: 87.5em;
+    }
+
+}
+.above .wrapper,
+.subnav .wrapper,
+.maincont.wrapper,
+footer[role="contentinfo"] .wrapper {
+	@extend .row;
+}
+
+main.content,.leftcol {
+	margin-top: 4.688em;
+}
+main form#seblod_form {
+	display: none;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.lt-ie10 .wrapper {
+	width: 87.5em;
+	font-size: 90%;
+}
+.aktuelles .leftcol {
+	padding-top: 0.7em;
+}
+.com_contact .maincont.wrapper {
+	background: transparent url('../images/header-kontakt-linie.png') no-repeat center top;
+}
+
+.dispN {
+	display: none !important;
+}
+
+}
+//endif

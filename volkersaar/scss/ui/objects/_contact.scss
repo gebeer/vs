@@ -1,0 +1,60 @@
+/* ==========================================================================
+    CONTACT
+   ========================================================================== */
+form {
+	fieldset {
+		border: 0;
+		padding: 0;
+		margin-bottom: 0;
+	}
+	label {
+		font-family: 'PMNCaeciliaW01-75Bold', serif;
+		font-size: 0.813em;
+		span {
+			color: $brand-color;
+		}
+	}
+	input[type="text"],textarea {
+		background: #fff;
+	}
+	.btn {
+		font-size: 0.813em;
+	}
+	.short input[type="text"] {
+	width: 95%;
+	}
+
+}
+
+.contact {
+	position: relative;
+	h2.contact-name,h3 {
+		background-image: none;
+		color: #4c565c;
+		font-family: 'PMNCaeciliaW01-85Heavy', serif;
+		font-size: 1.125em;
+		margin: 0;
+	}
+	h2.orange.line {
+		margin-top: 4em;
+	}
+	.contact-image {
+		right: 0;
+		position: absolute;
+		top: 0;
+	}
+	.contact-position,address {
+		font-style: normal;
+		font-size: 0.938em;
+	}
+	.contact-miscinfo {
+		@extend .grid-item;
+		@extend .one-third;
+
+		padding-right: 2em;
+	}
+	.contact-form {
+		@extend .grid-item;
+		@extend .two-thirds;
+	}
+}

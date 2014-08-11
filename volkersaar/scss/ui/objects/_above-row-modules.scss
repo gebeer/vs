@@ -1,0 +1,44 @@
+
+/* ==========================================================================
+    ABOVE-ROW MODULES
+   ========================================================================== */
+
+.above 	{
+	background: #eeebe5;
+	color: #4c565c;
+	font-family:'PMNCaeciliaW01-76BoldIt', serif;
+	position: relative;
+
+	.wrapper {
+		background: #eeebe5;
+	}
+
+	p,.rueru {
+		font-size: 1.5em;
+		line-height: 2.3em;
+		margin-bottom: 0; 
+	}	
+	.btn {
+		font-size: 70%;
+		margin-top: -4px;
+	}
+	&:after {
+		background: transparent url('../images/ribbon.png') no-repeat 0 0;
+		background-size: contain;
+		content: '';
+		display: block;
+		height:104px;
+		left: 120px;
+		position: absolute;
+		top: -6.6px;
+		width:71px;
+
+		@include media-query-max(desk) {
+			left: 5px;
+
+		}
+
+	}
+
+
+}

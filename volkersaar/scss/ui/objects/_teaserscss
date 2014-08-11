@@ -1,0 +1,74 @@
+
+/* ==========================================================================
+    HEADER
+   ========================================================================== */
+
+header.main {
+
+	@include vertical(#ededed, #ededed);
+	position: relative;
+	.slogan {
+		position: absolute;
+		left: 200px;
+		top: 270px;
+	}
+	h1 {
+		color: rgb(238, 235, 229);;
+		font-family: 'frontage_regular', sans-serif;
+		font-size: 2.9em;
+		font-variant: uppercase;
+		margin-left: -0.2em;
+		span {
+			font-family: 'frontage_bold', sans-serif;
+		}
+	}
+	p {
+		color: rgb(238, 235, 229);;
+		margin: 0;
+		strong {
+			font-size: 1.2em;
+		}
+	}
+	.logo {
+	left: 200px;
+	position: absolute;
+	top: 50px;
+	}
+	.mainnav {
+		position: absolute;
+		right: 60px;
+		top: 50px;
+	}
+	.callform {
+		@include transition;
+		@include box-shadow(6px 6px 1px 1px rgba(0,0,0,.5));
+		background: $brand-color url('../images/icon-tel.png') no-repeat 15px center;
+		height: 4em;
+		position: absolute;
+		right: 0;
+		top: 21.875em;
+		width: 4em;
+
+		&:hover {
+			cursor: pointer;
+			width: 9.7em;
+		}
+		&:after {
+			color: #fff;
+			font-family: 'PMNCaeciliaW01-75Bold', serif;
+			font-size: 1.125em;
+			content: 'Rückruf';
+			position: absolute;
+			left: 4em;
+			top: 1em;
+		}
+		.module {
+			display: none;
+		}
+	}
+
+}
+.home-page header.main {
+	@include vertical(#313c43, #4c565c);
+
+}

@@ -1,0 +1,71 @@
+
+/* ==========================================================================
+   	OPTIONAL MODULES
+   ========================================================================== */
+
+// Enable any of the following by switching the variable to true.
+$use-breadcrumbs:       true;
+$use-buttons:           true;
+$use-fluid-type:        true;
+$use-grid:              true;
+$use-joomla-modules:    true;
+$use-labels:            true;
+$use-layout:            true;
+$use-media:             true;
+$use-nav:               true;
+$use-pagination:        true;
+$use-rows:              true;
+$use-tables:            true;
+$use-wells:             true;
+$use-wrapper:           true;
+
+
+/* ==========================================================================
+   	OVERRIDE VARIABLES
+   ========================================================================== */
+
+//
+// Place any variables that should override framework defaults here.
+//
+// e.g.;
+//
+// $root-font-family: Helvetica, "Helvetica Neue", sans-serif!;
+//
+// or:
+//
+// $heading-font-weight: 600;
+//
+$serif-font-family: 'PMNCaeciliaW01-55Roman', serif;
+$sans-font-family: $serif-font-family;
+$brand-color: 			rgb(0, 157, 222);/*blau*/
+$root-font-family: $serif-font-family;
+$root-font-size:      100!default;
+$root-font-weight:      normal;
+$heading-font-family:   'frontage_regular', sans-serif;
+$heading-font-weight:   normal;
+$button-font-family: 'PMNCaeciliaW01-76BoldIt', serif;
+$wrapper-max-width: 87.5em!default;
+
+/* Sets the html background dark for a faux footer. */
+$body-background:      rgb(255,255,255);
+//$root-background:      $body-background;
+
+//$palm:                  1400px!default;
+//$lap:                   1400px!default;
+//$portable:              1400px!default;
+$desk:                  64em!default;
+$deskwide:              87.5!default;
+
+
+/* ==========================================================================
+   	CUSTOM VARIABLES
+   ========================================================================== */
+
+//
+// Place your own variables here.
+//
+// E.g.:
+//
+// $sandwich-filling:    bacon!default;
+//
+$brand-color-1: 			rgb(255, 108, 47);/*orange*/

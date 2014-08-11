@@ -1,0 +1,17 @@
+/* ==========================================================================
+    CONTACT
+   ========================================================================== */
+
+#system-message {
+	background: $brand-color;
+	color: #fff;
+	padding: 1em;
+
+	dt,.message p {
+		font-family: 'PMNCaeciliaW01-75Bold', serif;
+		color: #fff;
+	}
+	ul,li {
+		list-style-type: none;
+	}
+}

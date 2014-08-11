@@ -1,0 +1,40 @@
+/* ==========================================================================
+    DOWNLOADS
+   ========================================================================== */
+
+div.cck_page_desc {
+	margin: 2em 0 0 0 !important;
+	padding: 0 !important;
+
+	h2 {
+		margin-bottom: 1.5em;
+	}
+}
+
+div.downloads {
+	float: left;
+	padding-right: 2em;
+	width: 25%;
+
+	a {
+		background: transparent url('../images/icon-pdf.png') no-repeat center center;
+		display: block;
+		height: 61px;
+		width: 48px;
+	}
+
+	&.slogan {
+		width: auto;
+	}
+}
+
+.module-146 {
+	clear: both;
+	margin-top: 3em;
+}
+
+body.downloads {
+	h2.black {
+		margin-bottom: 1.5em;
+	}
+}

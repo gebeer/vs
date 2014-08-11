@@ -1,0 +1,108 @@
+
+/* ==========================================================================
+    FOOTER
+   ========================================================================== */
+footer .row {
+	padding-top: 45px;
+	padding-bottom: 60px;
+
+}
+footer {
+	background: rgb(76, 86, 92);
+	border-top: 1px solid #66747b;
+	position: relative;
+
+	.wrapper {
+		background: rgb(76, 86, 92);
+		//border-top: 1px solid #66747b;
+	}
+
+
+	/* Offset the content container as we're padding the grid items 
+	.content {
+		@include media-query(lap) {
+			margin-left: -$double-spacing-unit;
+		}
+	}*/
+
+	/* Make each module a grid item */
+	.module {
+		color: rgb(238, 235, 229);
+		font-family: 'PMNCaeciliaW01-75Bold', serif;
+
+		@extend .grid-item;
+
+		/* And give it a width on larger screens */
+		@extend .one-fifth;
+		margin-bottom: 0;
+	}
+	.module-header h3 {
+		color: $brand-color;
+		font-family: 'PMNCaeciliaW01-75Bold', serif;
+		font-size: 1em;
+		margin-bottom: 1.6em;
+	}
+	p {
+		color: #eeebe5;
+		font-size: 0.875em;
+		margin-bottom: 1.4em;
+
+	}
+	.footer-menu {
+		@extend .grid-item;
+
+		/* And give it a width on larger screens */
+		@extend .one-fifth;
+
+	}
+}
+
+
+[role="contentinfo"] {
+
+	blockquote {
+		border: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		font-family: 'PMNCaeciliaW01-55Roman', serif;
+	}
+}
+
+.credit-row {
+	background: rgb(47, 52, 55);
+	border-bottom: 1px solid rgb(102, 116, 123);
+	border-top: 1px solid rgb(102, 116, 123);
+
+    .wrapper {
+    	background: rgb(47, 52, 55);
+    }
+    p {
+	    color: #fff;
+    	font-size: 0.688em;
+	    line-height: 3.8em;
+	    margin: 0;
+	    text-align: center;
+    }
+}
+
+.module.brand {
+	background: transparent;
+	margin-top: 3.5em;
+
+	@extend .one-third;
+	h1 {
+		color: rgb(238, 235, 229);;
+		font-family: 'frontage_regular', sans-serif;
+		font-size: 0.875em;
+		left: 0;
+		margin-top: 3.3em;
+		
+		span {
+			font-family: 'frontage_bold', sans-serif;
+		}
+	}
+
+}

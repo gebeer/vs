@@ -1,0 +1,34 @@
+/* ==========================================================================
+    UI BUTTONS
+   ========================================================================== */
+
+/*
+ * Let's add some template-specific style to these babies!
+ */
+
+.btn {
+	background: $brand-color;
+	color: #fff;
+	font-weight: normal;
+	line-height: 2;
+	margin: 0;
+
+	&:hover {
+		background: darken($brand-color, 5%);
+
+	}
+	&:link,&:visited,&:hover,&:active {
+		color: #fff;
+	}
+	&.orange {
+		background: $brand-color-1;
+		color: #fff;
+		&:hover {
+			color: #fff;
+			background: darken($brand-color-1, 10%);
+		}
+	}
+	&.small {
+		line-height: 1.5;
+	}
+}

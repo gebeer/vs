@@ -1,0 +1,121 @@
+/* ==========================================================================
+	GRUENKLEE STYLES
+   ========================================================================== */
+
+span {
+	&.no-wrap {
+		white-space: nowrap;
+	}
+}
+
+/*helpers*/
+.margB_0{
+  margin-bottom: 0;
+}
+.margB_0-5{
+  margin-bottom: .5em;
+}
+
+.margR_0-3{
+  margin-right: .3em;
+}
+
+/*Spruch der Woche Header*/
+
+.spruchDerWoche {
+    font-family: 'frontage_regular',sans-serif !important;
+    font-size: 1.60em !important;
+    line-height: 1.6em;
+    color: #F4F4F4 !important;
+    margin-right: 145px !important;
+	text-align: right;
+	margin-top: -55px;
+	margin-left: -354px !important;
+    margin-right: 273px !important;
+    width: 760px;
+}
+
+.spruchDerWoche::before {
+	content:'"';
+	font-family: 'PMNCaeciliaW01-56Italic',serif !important;
+    font-size: 1.4em;
+    color: #FF6C2F;
+    margin-left: -30px;
+    margin-right: 5px;
+}
+.spruchDerWoche::after {
+	content:'"';
+    font-family: 'PMNCaeciliaW01-56Italic',serif !important;
+    font-size: 1.4em;
+    color: #FF6C2F;
+	margin-left: 5px;
+    margin-right: -21px;
+    position: absolute;
+    margin-top: -7px;
+}
+
+.lt-ie10 .spruchDerWoche::after {
+	margin-left: 0px !important;
+}
+/*
+.quote {
+    font-family: 'PMNCaeciliaW01-56Italic',serif !important;
+    font-size: 1.4em;
+    color: #FF6C2F;
+}
+
+.quote:last-child {
+    margin-left: 5px;
+    margin-right: -21px;
+}
+
+.spruchDerWoche .quote:first-child {
+    margin-left: -30px;
+    margin-right: 5px;
+}
+*/
+.aktuelles header.top {
+	background-image: -moz-linear-gradient(center top , #374248, #374248);
+	background-image: -ms-linear-gradient(center top , #374248, #374248);
+	background-image: -o-linear-gradient(center top , #374248, #374248);
+	background-image: -webkit-linear-gradient(center top , #374248, #374248) !important;
+	background-color: #374248 !important;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#374248), to(#374248));
+	background-image: -ms-linear-gradient(top, #374248, #374248);
+}
+
+.lt-ie10 .autor {
+	margin-left: 424px;
+	color: 	#FF6C2F;
+	left: 0px;
+}
+
+.lt-ie10 .spruchDerWoche {
+	margin-right: 215px !important;
+	margin-left: -331px !important;
+}
+.spruchdwoche .blue span{
+	display: none;
+}
+.autor {
+	color:#FF6C2F; 
+	position: absolute;
+	left: 27.9em;
+}
+
+.blau a {
+    font-size: 129%;
+}
+.blau a.blau {
+    font-size: 110%;
+}
+.orange a {
+    color: #FF6C2F;
+    font-size: 129%;
+}
+.orange a.orange {
+    font-size: 110%;
+}
+.orange a:hover {
+    color: #FB4A00;
+}

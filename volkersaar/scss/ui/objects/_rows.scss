@@ -1,0 +1,16 @@
+@if $use-rows == true {
+
+/* ==========================================================================
+    ROWS
+   ========================================================================== */
+
+	/* Make some adjustments for special rows */
+	.row {
+		padding: 0 200px;
+
+		@include media-query-max(desk) {
+			padding: 0 75px;
+		}
+	}
+
+}//endif

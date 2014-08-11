@@ -1,0 +1,49 @@
+
+/* ==========================================================================
+    HEADER
+   ========================================================================== */
+
+aside.teaser {
+	background: #009EDF;
+	margin-top: 8em;
+	position: relative;
+	.slogan {
+		background: transparent;
+		height: 8em;
+		left: 25%;
+		margin-top: -4em;
+		position: absolute;
+		text-align: center;
+		top: 50%;
+		width: 50%
+	}
+	img {
+		height: auto;
+		max-width: 100%;
+	}
+	h2 {
+		background-image: none;
+		background: transparent;
+		color: rgb(238, 235, 229);;
+		font-family: 'frontage_regular', sans-serif;
+		font-size: 1.7em;
+		font-variant: uppercase;
+		margin: 0 0 0.5em 0;
+		span {
+			background-color: transparent;
+			font-family: 'frontage_bold', sans-serif;
+			padding-right: 0;
+		}
+	}
+
+}
+.busicoach aside.teaser {
+	margin-top: 9em;
+}
+.view-contact aside.teaser,.impressum aside.teaser {
+		.slogan {
+		height: 5em;
+		margin-top: -2.5em;
+	}
+
+}

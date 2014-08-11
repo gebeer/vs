@@ -1,0 +1,179 @@
+
+/* ==========================================================================
+    HEADER
+   ========================================================================== */
+header.top {
+	@include vertical(#f4f4f4, #f4f4f4);
+	position: relative;
+	}
+.darkhead header.top,,.itemid-111 header.top,.view-contact header.top,.gutschein header.top {
+	@include vertical(#4c565c, #313c43);
+	}
+header .main {
+
+	@include vertical(#f4f4f4, #f4f4f4);
+	position: relative;
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	.slogan {
+		position: absolute;
+		left: 50%;
+		top: 17.25em;
+		&.startseite {
+			left: 12.5em;
+			top: 16.875em;
+
+			@include media-query-max(desk) {
+				left: 6em;
+				top: 12em;
+			}
+		}
+		&.verkaufstraining {
+			h1 {
+				&.icon{
+					&.right:before {
+						top: -25px;
+						right: 70px;
+
+					}
+				}
+			}
+		}
+		&.verkaufscoaching {
+			h1 {
+				&.icon{
+					&.right:before {
+						right: 270px;
+					}
+				}
+			}
+		}
+		&.verkaufstraining,&.busicoach,&.verkaufscoaching {
+			top: 14em;
+		}
+	}
+	h1 {
+		color: #4c565c;
+		font-family: 'frontage_regular', sans-serif;
+		font-size: 2.5em;
+		font-variant: uppercase;
+		margin-left: -0.25em;
+		span {
+			font-family: 'frontage_bold', sans-serif;
+		}
+	}
+	p {
+		color: #4c565c;
+		margin: 0;
+		strong {
+			font-size: 1.2em;
+		}
+	}
+
+
+	.logo {
+		font-size: 1em;
+		left: 12.5em;
+		position: absolute;
+		top: 3.125em;
+		width: auto;
+		z-index: 1000;
+
+		@include media-query-max(desk) {
+			left: 6em;
+			width: 110px;
+		}
+		@include media-query-max(lap) {
+			left: 1em;
+			top: 1em;
+			width: 80px;
+		}
+	}
+	.mainnav {
+		position: absolute;
+		right: 3.75em;
+		top: 3.125em;
+
+		@include media-query-max(lap) {
+			right: 1em;
+			top: 1em;
+		}
+	}
+
+}
+.darkhead header .main,.home-page header .main,.itemid-111 header .main,.gutschein header .main {
+	@include vertical(#4c565c, #313c43);
+	h1 {
+		color: rgb(238, 235, 229);
+		font-size: 2.9em;
+		margin-left: -0.2em;
+		position: absolute;
+		left: -9999em;
+	}
+	p {
+		color: rgb(238, 235, 229);
+		margin: 0;
+	}
+	.headline {
+		font-family: 'frontage_regular',sans-serif;
+   	    font-size: 2.9em;
+   	    margin-bottom: 0.9em;
+	    margin-left: -0.25em;
+	    margin-top: 0.5em;
+	    span {
+		    display: block;
+		    font-family: 'frontage_bold',sans-serif;
+		    margin-left: 0.15em;
+		    margin-top: 0.7em;
+	    }
+	}
+}
+.home-page header h1 span {
+	display: block;
+	margin-left: 0.15em;
+}
+.darkhead header .main, .com_contact header .main, .gutschein header .main {
+	h1 {
+		color: rgb(238, 235, 229);
+		margin-left: -0.2em;
+	}
+	p {
+		color: rgb(238, 235, 229);
+		margin: 0;
+	}
+
+}
+.itemid-111 header .main {
+	.slogan {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		top: 0;
+	}
+	h1 {
+		font-size: 2.125em;
+		position: absolute;
+
+		&.left {
+			left: 6.529em;
+			top: 8.088em;
+
+			@include media-query-max(desk) {
+				left: 6em;
+			}
+		}
+		&.right {
+			right: 5.88em;
+			top: 11.47em;
+
+			@include media-query-max(desk) {
+				right: 5em;
+				top: 9em;
+			}
+		}
+	}
+
+}

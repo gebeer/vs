@@ -1,0 +1,194 @@
+
+/* ==========================================================================
+    TYPOGRAPHY
+   ========================================================================== */
+//Frontage
+@font-face {
+    font-family: 'frontage_regular';
+    src: url('../fonts/juri_zaech_-_frontage-regular-webfont.eot');
+    src: url('../fonts/juri_zaech_-_frontage-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/juri_zaech_-_frontage-regular-webfont.woff') format('woff'),
+         url('../fonts/juri_zaech_-_frontage-regular-webfont.ttf') format('truetype'),
+         url('../fonts/juri_zaech_-_frontage-regular-webfont.svg#frontage_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}@font-face {
+    font-family: 'frontage_bold';
+    src: url('../fonts/../fonts/juri_zaech_-_frontage-bold-webfont.eot');
+    src: url('../fonts/juri_zaech_-_frontage-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/juri_zaech_-_frontage-bold-webfont.woff') format('woff'),
+         url('../fonts/juri_zaech_-_frontage-bold-webfont.ttf') format('truetype'),
+         url('../fonts/juri_zaech_-_frontage-bold-webfont.svg#frontage_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+//Caecilia
+@font-face{
+font-family:"PMNCaeciliaW01-55Roman";
+src:url("../fonts/729006/e9938f19-f9be-4b47-9f5a-c3441c7b84a2.eot?#iefix");
+src:url("../fonts/729006/e9938f19-f9be-4b47-9f5a-c3441c7b84a2.eot?#iefix") format("eot"),url("../fonts/729006/57d0d8b3-dd92-4639-bc73-f54734f54f3d.woff") format("woff"),url("../fonts/729006/e8f97b23-e117-4d0a-abc8-4a6112d9794f.ttf") format("truetype"),url("../fonts/729006/f97046a6-1405-40e5-80e8-282eccce10b8.svg#f97046a6-1405-40e5-80e8-282eccce10b8") format("svg");
+}
+@font-face{
+font-family:"PMNCaeciliaW01-56Italic";
+src:url("../fonts/729009/e4a0d124-7896-4516-b491-702a48f3f108.eot?#iefix");
+src:url("../fonts/729009/e4a0d124-7896-4516-b491-702a48f3f108.eot?#iefix") format("eot"),url("../fonts/729009/ad85bbe3-d582-4957-a027-b661a25cae9b.woff") format("woff"),url("../fonts/729009/a201afdb-af4c-461f-b900-3c726e76bd6e.ttf") format("truetype"),url("../fonts/729009/342b8bce-b73d-48ee-8715-8ce275e4830e.svg#342b8bce-b73d-48ee-8715-8ce275e4830e") format("svg");
+}
+@font-face{
+font-family:"PMNCaeciliaW01-75Bold";
+src:url("../fonts/729012/9bd4aa31-b713-46ea-98be-4ee7144485d3.eot?#iefix");
+src:url("../fonts/729012/9bd4aa31-b713-46ea-98be-4ee7144485d3.eot?#iefix") format("eot"),url("../fonts/729012/c8018977-bfbd-4a76-a48d-fa0be4da75ef.woff") format("woff"),url("../fonts/729012/1f750230-9c70-43f4-ae5c-e8d00c419fda.ttf") format("truetype"),url("../fonts/729012/0006ae28-8833-490d-82c5-b4f373a137c5.svg#0006ae28-8833-490d-82c5-b4f373a137c5") format("svg");
+}
+@font-face{
+font-family:"PMNCaeciliaW01-76BoldIt";
+src:url("../fonts/729015/e88f4b04-34be-437e-84a1-17e06c28094b.eot?#iefix");
+src:url("../fonts/729015/e88f4b04-34be-437e-84a1-17e06c28094b.eot?#iefix") format("eot"),url("../fonts/729015/e7156675-443e-42f4-a824-c14fccfc6ed8.woff") format("woff"),url("../fonts/729015/831b7f12-0076-4c1a-923f-598ddc3cbf2e.ttf") format("truetype"),url("../fonts/729015/7ec89148-85c8-4f90-bd4f-04a7bccc1548.svg#7ec89148-85c8-4f90-bd4f-04a7bccc1548") format("svg");
+}
+@font-face{
+font-family:"PMNCaeciliaW01-85Heavy";
+src:url("../fonts/729018/b18c2183-94c9-43d7-8bd7-4e030cf7749b.eot?#iefix");
+src:url("../fonts/729018/b18c2183-94c9-43d7-8bd7-4e030cf7749b.eot?#iefix") format("eot"),url("../fonts/729018/b644e35b-6214-4f76-ad61-4d66c2fa99a9.woff") format("woff"),url("../fonts/729018/c9cabe33-9d11-4955-8794-4ca2b540eaad.ttf") format("truetype"),url("../fonts/729018/e7a29f78-41d4-4ecc-8cab-2fa675292349.svg#e7a29f78-41d4-4ecc-8cab-2fa675292349") format("svg");
+}
+@font-face{
+font-family:"PMNCaeciliaW01-86HeavyI";
+src:url("../fonts/729021/51dfc796-b7c7-400b-be83-a996757def3b.eot?#iefix");
+src:url("../fonts/729021/51dfc796-b7c7-400b-be83-a996757def3b.eot?#iefix") format("eot"),url("../fonts/729021/d4714ce3-fce0-4dbc-be6e-5b20bb91fb6a.woff") format("woff"),url("../fonts/729021/9d345cd7-6d4e-4d96-b040-e60e14797e6b.ttf") format("truetype"),url("../fonts/729021/2b39d2f6-2bdc-4d1e-85ce-c536248ac7ae.svg#2b39d2f6-2bdc-4d1e-85ce-c536248ac7ae") format("svg");
+}
+
+html {
+    @include media-query-max(desk) {
+                font-size: $root-font-size * 0.85%; // 16px if the root was 16px
+            }
+    @include media-query(deskwide) {
+                font-size: $root-font-size * 1%; // 16px if the root was 16px
+            }
+    line-height: 1.25em;
+	}
+p {
+    color: #2f3437;
+    font-size: $root-font-size*0.8%;
+}
+a {
+    &:focus {
+        outline: 0;
+    }
+    &.boldit {
+        background: transparent url('../images/icon-arrow.png') no-repeat left center;
+        font-family: 'PMNCaeciliaW01-56Italic', serif;
+        font-weight: normal;
+        font-size: 0.813em;
+        padding-left: 0.625em;
+
+        &.left {
+            background: transparent url('../images/icon-arrow-left-blue.png') no-repeat left center;
+
+            &.black {
+                background: transparent url('../images/icon-arrow-left.png') no-repeat left center;
+                color: #000;
+
+                &:hover {
+                    background: transparent url('../images/icon-arrow-left.png') no-repeat left center;
+                    color: darken($brand-color, 10);
+                }
+            }
+        }
+    }
+    &.orange {
+        color: $brand-color-1;
+
+        &:hover {
+            color: darken($brand-color-1, 10);
+        }
+    }
+}
+/* BLOCK QUOTES */
+/* Borders are nice, sometimes. */
+blockquote {
+    border-left: 4px solid lighten($brand-color, 10%);
+    font-style: italic;
+}
+
+cite {
+	font-style: normal;
+}
+.intro {
+  font-size: 1em;
+  line-height: 1.25em;
+  margin: 0;
+}
+/* EMPHATIC ELEMENTS */
+/* We reset the root font size to 300, so better wind down boldness. */
+b,
+strong {
+    font-family: 'PMNCaeciliaW01-75Bold', serif;
+    font-weight: normal;
+}
+i,
+em {
+    font-family: 'PMNCaeciliaW01-56Italic', serif;
+    font-weight: normal;
+
+}
+
+h2 {
+    background: transparent url('../images/bg_h2.png') repeat-x center;
+    clear: both;
+    color: $brand-color;
+    font-size: 1.563em;
+    margin: 0 0 2.5em -0.2em;
+    width: 100%;
+
+    &.right:after {
+        background: #fff;
+        content: "";
+        display: block;
+        height: 40px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 70px;
+    }
+
+    span {
+        background: #fff;
+        //display: inline-block;
+        padding-right: 1.5em;
+
+        &.no-wrap {
+            background: transparent;
+            padding: 0;
+        }
+
+        span {
+            display: none;
+        }
+    }
+
+    &.black {
+        background-image: none;
+        color: #4c565c;
+        font-family: 'PMNCaeciliaW01-75Bold', serif;
+        font-size: 1.75em;
+        margin: 0;
+    }
+
+    &.orange {
+        color: $brand-color-1;
+        margin-bottom: 1.5em;
+    }
+    &.orange.blue {
+        color: $brand-color;
+        margin-bottom: 1.5em;
+    }
+    &.orange.line {
+        background: transparent url('../images/bg_h2_orange.png') repeat-x center;
+    }
+}
+.verkaufstraining h2.black,.busicoach h2.black {
+    margin-bottom: 2em;
+}
+h3 {
+    line-height: 1.5em;
+}
