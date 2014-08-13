@@ -19,7 +19,7 @@ defined( '_JEXEC' ) or die;
 // Write your Custom Markup code. (see default markup below)
 
 // cckMarkup
-function cckMarkup_seb_blog( $cck, $html, $field, $options )
+function cckMarkup_seb_blog_blank_list( $cck, $html, $field, $options )
 {
 	return $html;
 }

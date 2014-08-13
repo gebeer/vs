@@ -237,21 +237,46 @@
 			@extend .three-fifths;
 			padding-right: 2em;
 		}
-		.nutzen {
+		.right {
 			@extend .grid-item;
 			@extend .two-fifths;
+
+		}
+		.nutzen,.kundenstimmen {
 
 			background: $brand-color;
 			min-height: 175px;
 			padding: 1.5em 1em;
 
 
-		h3,p {
-			color: #fff;
+			h3,p {
+				color: #fff;
+			}
+			h3 {
+				margin-bottom: 0.6em;
+			}
 		}
-		h3 {
-			margin-bottom: 0.6em;
-		}
+		.kundenstimmen {
+			margin-top: 2em;
+			h3 {
+				font-size: 1.3em;
+			}
+			.ratingradio {
+				background: #fff;
+				padding: 3px;
+				width: 170px;
+				margin-bottom: 1em;
+			}
+			.kusti {
+				color: #fff;
+				display: inline-block;
+			}
+			a.boldit {
+				background-image: url('../images/icon-arrow-white.png');
+			}
+			.btn.kusti {
+				display: none;
+			}
 		}
 		.wrap {
 			margin-top: 3em;

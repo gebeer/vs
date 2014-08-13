@@ -72,5 +72,27 @@ jQuery(".to-top").fadeOut();
        jQuery('.rueru').remove();
    });
 
+  //ratinform
+  jQuery('#ks_rate input.inputbox.radio').rating();
+
+  //open modal
+  var openform = GetURLParameter('openform');
+  if (openform) {
+    jQuery('#ratingmodal').reveal();
+  };
 
  });
+function GetURLParameter(sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) 
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) 
+        {
+            return sParameterName[1];
+        }
+    }
+}
+

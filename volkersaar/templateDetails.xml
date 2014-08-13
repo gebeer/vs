@@ -37,6 +37,8 @@
 		<position>teaser</position>
 		<position>contentinfo</position>
 		<position>breadcrumbs</position>
+		<position>ratingform</position>
+		<position>ratingaverage</position>
 		<position>debug</position>
 	</positions>
 	<languages folder="language">

@@ -8,7 +8,7 @@
 	<license>GNU General Public License version 2 or later.</license>
 	<creationDate>April 2013</creationDate>
 	<description>SEBLOD 3.x - www.seblod.com // by Octopoos - www.octopoos.com</description>
-	<version>1.1.0</version>
+	<version>1.2.0</version>
 	
 	<files>
 		<folder>css</folder>
@@ -21,6 +21,7 @@
 		
 		<filename>config.php</filename>
 		<filename>index.php</filename>
+		<filename>template_picker.png</filename>
 		<filename>template_preview.png</filename>
 		<filename>template_thumbnail.png</filename>
 		<filename>templateDetails.xml</filename>
@@ -34,6 +35,7 @@
 	
 	<positions>
 		<position>mainbody</position>
+		<position toggle="position_modal">modal</position>
 		<position toggle="position_hidden">hidden</position>
 		<position toggle="position_clear">clear</position>
 	</positions>
@@ -46,12 +48,16 @@
 			</fieldset>
 			
 			<fieldset name="positions" label="TPL_SEB_MINIMA_LEGEND_POSITIONS">
-				<field name="variation_default" type="cck" construction="core_variation" default="seb_css3" label="TPL_SEB_MINIMA_DEFAULT_VARIATION" description="" class="inputbox" />
-				<field name="position_hidden" type="list" default="0" label="TPL_SEB_MINIMA_POSITION_HIDDEN" description="TPL_SEB_MINIMA_POSITION_HIDDEN_DESC" class="inputbox">
+				<field name="position_clear" type="list" default="1" label="TPL_SEB_MINIMA_POSITION_CLEAR" description="" class="inputbox">
 					<option	value="0">JHIDE</option>
 					<option	value="1">JSHOW</option>
 				</field>
-				<field name="position_clear" type="list" default="0" label="TPL_SEB_MINIMA_POSITION_CLEAR" description="TPL_SEB_MINIMA_POSITION_CLEAR_DESC" class="inputbox">
+				<field name="variation_default" type="cck" construction="core_variation" default="seb_css3" label="TPL_SEB_MINIMA_DEFAULT_VARIATION" description="" class="inputbox" />
+				<field name="position_hidden" type="list" default="1" label="TPL_SEB_MINIMA_POSITION_HIDDEN" description="" class="inputbox">
+					<option	value="0">JHIDE</option>
+					<option	value="1">JSHOW</option>
+				</field>
+				<field name="position_modal" type="list" default="1" label="TPL_SEB_MINIMA_POSITION_MODAL" description="" class="inputbox">
 					<option	value="0">JHIDE</option>
 					<option	value="1">JSHOW</option>
 				</field>

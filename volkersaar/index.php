@@ -87,7 +87,10 @@ include_once JPATH_THEMES . '/' . $this->template . '/logic.php';
                     <?php endif; ?>
                     <main role="main" class="content<?php echo $mainwidth; ?>"<?php echo $mainpadding; ?>>
                         <jdoc:include type="message" />
-                        <jdoc:include type="component" />
+                        <?php if($this->countModules('ratingaverage')) : ?>
+                        <jdoc:include type="modules" name="ratingaverage" style="ratingaverage" />
+                        <?php endif; ?>
+                       <jdoc:include type="component" />
                         <?php if($this->countModules('complementary')) : ?>
                         <jdoc:include type="modules" name="complementary" style="training" />
                         <?php endif; ?>
@@ -129,7 +132,16 @@ include_once JPATH_THEMES . '/' . $this->template . '/logic.php';
                 <p>&copy; Copyright <?php echo date("Y"); ?> - <?php echo htmlspecialchars($app->getCfg('sitename'));?> - All rights reserved.&nbsp;&nbsp;&nbsp;Created by gruenklee - kommunikation.design</p>
             </div>
         </div>
-        <?php if($this->countModules('debug')) : ?>
+        <?php if($this->countModules('ratingform')) : ?>
+            <div id="ratingmodal" class="ratingform reveal-modal">
+            <jdoc:include type="modules" name="ratingform" style="ratingform" />
+            <?php if ($itemid != 112) : ?>
+            <jdoc:include type="modules" name="ratingliste" style="ratingform" />
+            <?php endif ?>
+            <a class="close-reveal-modal">&#215;</a>
+            </div>
+        <?php endif; ?>
+         <?php if($this->countModules('debug')) : ?>
             <jdoc:include type="modules" name="debug"/>
         <?php endif; ?>
 

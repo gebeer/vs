@@ -65,16 +65,21 @@ $doc->addScript('http://w.sharethis.com/button/buttons.js');
 			</p>
 
 			<p><a class="btn" href="/kontakt" title="Schreiben Sie mir ein Nachricht via Formular, ich melde mich so schnell wie möglich bei Ihnen." onclick="trackKontakt('by_form')">Nachricht via Formular schreiben</a></p>
-      <?php if ($cck->getValue('general_file')) : ?>
-		  <p class="margB_0"><a class="btn orange" href="<?php echo $cck->get('general_file')->link; ?>" onclick="trackKontakt('by_pdf')" title="Faxanmeldung im PDF-Format herunterladen">Anmeldung: PDF herunterladen</a></p>
+      		<?php if ($cck->getValue('general_file')) : ?>
+		  	<p class="margB_0"><a class="btn orange" href="<?php echo $cck->get('general_file')->link; ?>" onclick="trackKontakt('by_pdf')" title="Faxanmeldung im PDF-Format herunterladen">Anmeldung: PDF herunterladen</a></p>
 			<?php endif ?>
 		</div>
-		<aside class="nutzen">
-			<h3>Ihr Nutzen</h3>
-			<p><?php echo $cck->getValue('lei_nutzen'); ?></p>
+		<div class="right">
+			<aside class="nutzen">
+				<h3>Ihr Nutzen</h3>
+				<p><?php echo $cck->getValue('lei_nutzen'); ?></p>
 
-		</aside>
-
+			</aside>
+			<aside class="kundenstimmen">
+				<h3>Kundenstimmen</h3>
+				{loadposition ratingmod}
+			</aside>
+		</div>
 		<div class="wrap clearfix">
 			<section class="inhalte"<?php echo $inhaltwidth ?>>
 				<h3>Inhalt</h3>

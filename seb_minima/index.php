@@ -10,37 +10,25 @@
 
 defined( '_JEXEC' ) or die;
 
-$doc = JFactory::getDocument();
-
-$headData=$doc->getHeadData();
-unset($headData['styleSheets'][JURI::base(true).'/media/cck/css/cck.css']);
-unset($headData['styleSheets'][JURI::base(true).'/media/cck/css/cck.content.css']);
-unset($headData['styleSheets'][JURI::base(true).'/media/cck/css/cck.intro.css']);
-unset($headData['styleSheets'][JURI::base(true).'/media/cck/css/cck.list.css']);
-unset($headData['styleSheets'][JURI::base(true).'/media/cck/css/cck.search.css']);
-//unset($headData['scripts'][JURI::base(true).'/media/system/js/validate.js']);
-//unset($headData['scripts'][JURI::base(true).'/media/cck/js/cck.core-3.0.0.min.js']);
-//$headData['style']['text/css'] = preg_replace('%/\* Variation: seb_css3 \*/\s*div.seb_css3 \{.*overflow:hidden; \}%', '', $headData['style']['text/css']);
-       
-$doc->setHeadData($headData);
-
-
-
-
-
 // -- Initialize
 require_once dirname(__FILE__).'/config.php';
 $cck	=	CCK_Rendering::getInstance( $this->template );
 if ( $cck->initialize() === false ) { return; }
 
-
-
 // -- Render
 if ( $cck->id_class != '' ) {
-	echo $cck->renderPosition( 'mainbody', '', $cck->h( 'mainbody' ) );
+	echo '<div class="'.trim( $cck->id_class ).'">'.$cck->renderPosition( 'mainbody', '', $cck->h( 'mainbody' ) ).'</div>';
 } else {
 	echo $cck->renderPosition( 'mainbody', '', $cck->h( 'mainbody' ) );
 }
+
+if ( $cck->countFields( 'modal' ) && JCck::on() ) {
+	JHtml::_( 'bootstrap.modal', 'collapseModal' );
+	?>
+	<div class="modal hide fade" id="collapseModal">
+		<?php echo $cck->renderPosition( 'modal' ); ?>
+	</div>
+<?php }
 
 if ( $cck->countFields( 'hidden' ) ) { ?>
 	<div style="display: none;">

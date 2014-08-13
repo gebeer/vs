@@ -48,6 +48,33 @@ function modChrome_training($module, &$params, &$attribs)
     </div>
     <?php endif;
 }
+function modChrome_ratingform($module, &$params, &$attribs)
+{
+    if (!empty ($module->content)) : ?>
+    <div class="module <?php echo $params->get('moduleclass_sfx'); ?> module-<?php echo $module->id; ?>">
+            <?php if ($module->showtitle) : ?>
+                    <h2 class="blue"><span><?php echo $module->title; ?></span></h2>
+            <?php endif; ?>
+            <?php echo $module->content; ?>
+    </div>
+    <?php endif;
+}
+function modChrome_ratingaverage($module, &$params, &$attribs)
+{
+    if (!empty ($module->content)) : ?>
+    <div class="module <?php echo $params->get('moduleclass_sfx'); ?> module-<?php echo $module->id; ?>">
+            <?php if ($module->showtitle) : ?>
+                    <h2 class="icon orange star right"><span><?php echo $module->title; ?></span></h2>
+            <?php endif; ?>
+            <article class="article clearfix">
+            <h1>Ihre Stimme ist uns wichtig!</h3>
+            <?php echo $module->content; ?>
+            </article>
+            <a class="btn" href="#" data-reveal-id="ratingmodal">Bewerten Sie unsere Leistungen</a>
+            <hr>
+    </div>
+    <?php endif;
+}
 function modChrome_whatsnew($module, &$params, &$attribs)
 {
     if (!empty ($module->content)) : ?>
