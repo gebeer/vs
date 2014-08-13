@@ -1,0 +1,131 @@
+/* jQuery.Rating Plugin CSS - http://www.fyneworks.com/jquery/star-rating/ */
+div.rating-cancel,div.star-rating{float:left;width:25px;height:25px;text-indent:-999em;cursor:pointer;display:block;background:transparent;overflow:hidden}
+div.rating-cancel,div.rating-cancel a{background:url(../images/delete.gif) no-repeat 0 -25px;display:none!important;}
+div.star-rating,div.star-rating a{background:url(../images/star.gif) no-repeat 0 0px}
+div.rating-cancel a,div.star-rating a{display:block;width:25px;height:100%;background-position:0 0px;border:0}
+div.star-rating-on a{background-position:0 -25px!important;transition: none!important}
+div.star-rating-hover a{background-position:0 -50px;transition: none!important}
+/* Read Only CSS */
+div.star-rating-readonly a{cursor:default !important}
+/* Partial Star CSS */
+div.star-rating{background:transparent!important;overflow:hidden!important}
+span.star-rating-control {
+	.ratingform & {
+		display: block;
+	}
+	padding: 3px 0;
+	margin-bottom: 54px;
+}
+/* END jQuery.Rating Plugin CSS */
+
+/*	--------------------------------------------------
+	Reveal Modals
+	-------------------------------------------------- */
+	
+.reveal-modal-bg { 
+	position: fixed; 
+	height: 100%;
+	width: 100%;
+	background: #000;
+	background: rgba(0,0,0,.8);
+	z-index: 100;
+	display: none;
+	top: 0;
+	left: 0; 
+	}
+
+.reveal-modal {
+	visibility: hidden;
+	top: 100px; 
+	left: 40%;
+	margin-left: -300px;
+	width: 60%;
+	background: #fff;
+	position: absolute;
+	z-index: 101;
+	padding: 30px 40px 34px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+	box-shadow: 0 0 10px rgba(0,0,0,.4);
+	}
+	
+.reveal-modal.small 		{ width: 200px; margin-left: -140px;}
+.reveal-modal.medium 		{ width: 400px; margin-left: -240px;}
+.reveal-modal.large 		{ width: 600px; margin-left: -340px;}
+.reveal-modal.xlarge 		{ width: 800px; margin-left: -440px;}
+
+.reveal-modal .close-reveal-modal {
+	font-size: 22px;
+	line-height: .5;
+	position: absolute;
+	top: 8px;
+	right: 11px;
+	color: #aaa;
+	text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+	font-weight: bold;
+	cursor: pointer;
+	} 
+/*
+	
+NOTES
+
+Close button entity is &#215;
+
+Example markup
+
+<div id="myModal" class="reveal-modal">
+	<h2>Awesome. I have it.</h2>
+	<p class="lead">Your couch.  I it's mine.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices aliquet placerat. Duis pulvinar orci et nisi euismod vitae tempus lorem consectetur. Duis at magna quis turpis mattis venenatis eget id diam. </p>
+	<a class="close-reveal-modal">&#215;</a>
+</div>
+
+*/
+.ratingform {
+	.radios label {
+		display: none;
+	}
+	.inner {
+		padding: 0 10px;
+	}
+	.rating {
+		margin-bottom: 10px;
+	}
+
+	.button {
+		width: 100%;
+		line-height: 62px;
+	}
+	textarea {
+		height: 65px;
+	}
+	.inputbox,textarea {
+		background: #ededed;
+	}
+}
+.ratingaverage {
+	line-height: 28px;
+}
+
+hr {
+	
+	&.blue {
+		background: $brand-color;
+		height: 3px;
+	}
+}
+.itemid-110, .article.grid-item {
+	.bewerten,.boldit.kusti {
+		display: none;
+	}
+	.btn.kusti {
+		margin-top: 1em;
+	}
+
+	.ratingradio {
+		margin-top: 1.5em;
+	}
+}

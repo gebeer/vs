@@ -39,14 +39,6 @@ $count			=	count( $items );
 	echo $radio;
 	?>
 </div>
-<div style="display:none;">
-<?php
-	foreach ( $items as $item ) {
-		echo $item->getValue('ks_rate').'<br>';
-	}
-
-?>
-</div>
 <?php
 // -- Finalize
 $cck->finalize();
