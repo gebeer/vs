@@ -11,7 +11,7 @@
 /* Hide an element but leave it available to speaking browsers. */
 .visuallyhidden {
     overflow: hidden;
-    position: absolute;
+    position: absolute !important;
     clip: rect(0 0 0 0);
     height: 1px;
     width: 1px;
