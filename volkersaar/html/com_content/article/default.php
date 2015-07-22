@@ -21,6 +21,8 @@ $info = $this->item->params->get('info_block_position', 0);
 
 ?>
 <?php if ($this->params->get('show_page_heading', 1)) : ?>
+	<h2><span class="subheading-category"><?php echo $this->params->get('page_heading'); ?></span></h2>
 <?php endif; ?>
 
-		<?php echo $this->item->text; ?>
+	<?php echo $this->item->text; ?>
+
